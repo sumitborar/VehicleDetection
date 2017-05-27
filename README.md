@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image5]: ./project_images/bboxes_and_heat.png
 [image6]: ./project_images/labels_map.png
 [image7]: ./project_images/output_bboxes.png
-[video1]: ./project_video.mp4
+[video1]: ./project_video_out.mp4
 
 ## 1. File Details
 * Vehicle Detection.ipynb - Python notebook containing both classifier training pipeline and video annotations code.
