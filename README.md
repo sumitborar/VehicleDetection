@@ -100,6 +100,8 @@ Here's a [link to my video result](./project_video_out.mp4)
 Heatmap code is located in block 10 of the notebook. For removing out false positives and smoothening of the results, I record  bounding boxes for each frame . I create a heatmap of last 20 frames and then threshold the map to identify vehicle positions.
 I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  
 
+In order to reduce false positives, SVC prediction score with threshold was used. I also averaged heatmaps of last 10 frames to get smoother bounding box. 
+
 Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
 
 ### Here are six frames and their corresponding heatmaps:
